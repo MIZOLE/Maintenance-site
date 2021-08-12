@@ -1,0 +1,202 @@
+
+        body {
+            background-color: whitesmoke;
+            color: rgb(90, 143, 143);
+        }
+        .demo{
+            height: 100%;
+            background-image: linear-gradient(to right, whitesmoke, rgb(151, 149, 149));
+        }
+
+        .home {
+            color: rgb(101, 122, 143);
+            font-style:   Arial;
+            border-width: 3px;
+            border-color: black;
+            background-color: whitesmoke;
+            
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: white;
+            size: 1ch;
+        }
+
+        .topnav a {
+            float: right;
+            display: block;
+            color: rgb(200, 204, 193);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 23px;
+            display: flex;
+        }
+
+        .Government {
+            color: rgb(200, 204, 193);
+            font-style:   Arial;
+            /* border-width: 3px;
+            border-color: black;
+            border-style: solid; */
+            background-color: whitesmoke;
+
+
+        }
+
+        .midle {
+            color: rgb(200, 204, 193);
+            font-style:   Arial;
+            /* border-width: 1.5px;
+            border-color: black;
+            border-style: solid; */
+
+        }
+
+        .top {
+
+            color: rgb(200, 204, 193);
+            font-style:   Arial;
+            /* border-width: 1.5px;
+            border-color: black;
+            border-style: solid; */
+
+
+
+        }
+
+        h3 {
+            color: rgb(210, 219, 191);
+            background-color: rgb(101, 122, 143);
+        }
+
+        .bottom {
+
+            color: white;
+            font-style:   Arial;
+            /* border-width: 1.5px;
+            border-color: black;
+            border-style: solid; */
+
+
+        }
+
+        .all {
+        font-style: Arial;
+           
+        }
+
+        .container {
+            display: flex;
+            padding: auto;
+            background-color: rgb(101, 122, 143);
+        }
+
+        .logo {
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        .topnav {
+            padding-left: 800px;
+            padding-top: 90px;
+
+        }
+
+        H2 {
+            color: rgb(210, 219, 191);
+            background-color: rgb(101, 122, 143);
+        }
+        .fh1{
+            font-size: larger;
+        }
+        .contents{
+
+            display:flex;
+        flex-direction: row;
+        }
+        .footer {
+            
+            padding: 3px;
+            background-color: rgb(101, 122, 143);
+            color: white;
+        
+        }
+        .social{
+            text-align: right;
+            padding-left: 430px;
+        }
+        .address{
+            text-align: left;
+            top: 0%;
+            font-size: large;
+            padding-left: 70px;
+        }
+        .contact{
+            text-align: left;
+            padding-left: 380px;
+        }
+        .fir {
+            display: flex;
+            flex-direction: row ;
+            box-sizing: border-box;
+            width: 100%;
+
+        }
+
+        .pic1 {
+            flex: 1;
+            color: #38424d;
+            padding: 30px;
+            background-color: #B0B0B0;
+            font-size: large;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .pic2 {
+            flex: 1;
+            color: #38424d;
+            padding: 30px;
+            background-color: #C7C7C7;
+            font-size: large;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .pic3 {
+            flex: 1;
+            color: #38424d;
+            font-size: large;
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 30px;
+            background-color: #DEDEDE;
+        }
+        .pic4{
+            flex: 1;
+            color: #38424d;
+            font-size: large;
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 30px;
+            background-color: #E9EAEC;
+        }
+        @media screen and (max-width:760px) {
+            .fir{
+                flex-direction: column-reverse;
+            }
+        }
+        .link a:link, a:visited{
+            background-color: rgb(101, 122, 143);
+             color: white;
+             padding: 14px 25px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             border-radius: 0 5px 5px 0;
+        }
+        .link a:hover, a:active{
+            background-color: red;
+        }

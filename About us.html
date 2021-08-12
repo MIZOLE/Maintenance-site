@@ -1,401 +1,528 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="mystyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: whitesmoke;
+      color: rgb(200, 204, 193);
+      border-width: 3px;
+      border-color: black;
 
-    <style>
-        .heading {
-            background-color: slategrey;
-            color: rgb(200, 204, 193);
-            font-style: oblique;
-            border-style: solid;
-            border-width: 3px;
-            border-color: black;
-        }
+    }
 
-        body {
-            background-color: whitesmoke;
-            color: rgb(200, 204, 193);
-            border-width: 3px;
-            border-color: black;
+    .heading {
+      background-color: slategrey;
+      color: rgb(200, 204, 193);
+      font-style: oblique;
+      border-style: solid;
+      border-width: 3px;
+      border-color: black;
+    }
 
-        }
-
-
-        .home {
-            color: rgb(200, 204, 193);
-            font-style: oblique;
-            border-width: 3px;
-            border-color: black;
-
-        }
-
-        .contacts {
-            color: slategrey;
-            padding-bottom: 40ch;
-            border-width: 3px;
-            border-color: black;
-
-        }
-
-        .our {
-            color: rgb(200, 204, 193);
-            border-style: solid;
-            border-width: 3px;
-            border-color: black;
-            background-color: slategrey;
-
-        }
-
-        .statement {
-            background-color: slategrey;
-            color: rgb(200, 204, 193);
-            border-style: solid;
-            border-width: 3px;
-            border-color: black;
-        }
-
-        /* .statement {
-          color:
-        } */
-
-        .social {
-            color: lightslategra;
-            margin: 3pt;
-
-        }
-
-        .topnav {
-            background-color: gray(211, 194, 194);
-            overflow: hidden;
-        }
-
-        .topnav a {
-            float: left;
-            display: block;
-            color: rgb(200, 204, 193);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 23px;
-        }
-
-        /* .topnav {
-            background-color: gray;
-            overflow: hidden;
-        } */
-
-        .media {
-            color: rgb(200, 204, 193);
-            border-style: solid;
-            border-width: 3px;
-            border-color: black;
-            background-color: slategrey;
-
-        }
-
-        .topnav a:hover {
-            background-color: #ddd;
-            color: rgb(200, 204, 193);
-            size: 1ch;
-        }
-
-        .active {
-            size: 1ch;
-        }
-
-        .Government {
-            color: rgb(200, 204, 193);
-            background-color: gray;
-            border-style: solid;
-            border-width: 3px;
-            border-color: black;
-
-        }
-
-        .search {
-            float: right;
-            color: slategrey;
+    .about_section {
+      color: rgb(200, 204, 193);
+      font-style: oblique;
+      border-width: 3px;
+      border-color: black;
+    }
 
 
-        }
+    .contacts {
+      color: slategrey;
+      padding-bottom: 40ch;
+      border-width: 3px;
+      border-color: black;
 
-        /* h3 {
-            color: rgb(200, 204, 193);
-            ;
-            background-color: slategrey;
-        } */
+    }
 
-        .paragraph {
-            color: slategrey;
-        }
-
-        .par1 {
-            color: slategrey;
-        }
-
-        .par2 {
-            color: slategrey;
-        }
-
-        .par3 {
-            color: slategrey;
-        }
-
-        .state {
-            display: flex;
-        }
-
-        .FTI {
-            color: slategrey;
-        }
-
-        .topnav {
-            padding-left: 600px;
-            padding-top: 80px;
+    .our {
+      color: rgb(200, 204, 193);
+      border-style: solid;
+      border-width: 3px;
+      border-color: black;
+      background-color: slategrey;
 
 
-        }
+    }
 
-        /* 
-        h1 {
-            background-color: slategrey;
+    .statement {
 
-        } */
+      color: rgb(200, 204, 193);
 
-        .logo {
-            padding-left: 10px;
-            padding-top: 10px;
-        }
+    }
 
-        .combine {
-            background-color: slategrey;
-            display: flex;
-            flex-direction: row;
-        }
-    </style>
+    /* .statement {
+  color:
+} */
 
-    <div class="combine clearfix">
-        <div class="logo">
-            <img src="logo2.jpg" alt="show" style="width:150px; height:100x;">
-        </div>
+    .social {
+      color: lightslategra;
+      margin: 3pt;
 
-        <div class="topnav" id="myTopnav">
-            <a href="Home.html" class="active">Home</a>
-            <a href="About us.html">About us</a>
-            <a href="Government.html">City Departments</a>
+    }
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+    .topnav {
+      background-color: gray(211, 194, 194);
+      overflow: hidden;
+    }
 
+    .topnav a {
+      float: left;
+      display: block;
+      color: rgb(200, 204, 193);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 23px;
+    }
+
+    /* .topnav {
+    background-color: gray;
+    overflow: hidden;
+} */
+
+    .media {
+      color: rgb(200, 204, 193);
+      border-style: solid;
+      border-width: 3px;
+      border-color: black;
+      background-color: slategrey;
+
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: rgb(200, 204, 193);
+      size: 1ch;
+    }
+
+    .active {
+      size: 1ch;
+    }
+
+    .Government {
+      color: rgb(200, 204, 193);
+      background-color: gray;
+      border-style: solid;
+      border-width: 3px;
+      border-color: black;
+
+    }
+
+    .search {
+      float: right;
+      color: slategrey;
+    }
+
+
+    .html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 22%;
+      margin-bottom: 18px;
+      padding: 0 8px;
+
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+      background-color: rgb(236, 228, 228);
+    }
+
+    .card,
+    img {
+      border-radius: 2.5px;
+      border: 1px solid #ddd;
+      padding: 3.5px;
+      height: auto;
+
+
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: rgb(200, 204, 193);
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: rgb(53, 52, 52);
+    }
+
+    .email {
+      color: rgb(53, 52, 52);
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: rgb(101, 122, 143);
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .logo {
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+
+    .combine {
+      background-color: slategrey;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .paragraph {
+      color: rgb(200, 204, 193);
+    }
+
+    .par1 {
+      color: rgb(200, 204, 193);
+      text-align: left;
+    }
+
+    .par2 {
+      color: rgb(200, 204, 193);
+      text-align: left;
+    }
+
+    .par3 {
+      color: rgb(200, 204, 193);
+      text-align: left;
+    }
+
+    .state {
+      display: flex;
+    }
+
+    .FTI {
+      color: slategrey;
+    }
+
+    .h5,
+    p {
+      color: rgb(200, 204, 193);
+    }
+
+    /* .h2{
+  rgb:(200, 204, 193);
+} */
+
+
+    .topnav {
+      padding-left: 700px;
+      padding-top: 100px;
+
+
+    }
+
+
+    /* .button:hover {
+  background-color: #555;
+} */
+
+    /* @media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  } */
+
+
+    .fh1 {
+      font-size: larger;
+    }
+
+    .contents {
+
+      display: flex;
+      flex-direction: row;
+    }
+
+    .footer {
+
+      padding: 3px;
+      background-color: rgb(101, 122, 143);
+      color: white;
+
+    }
+
+    .social {
+      text-align: right;
+      padding-left: 430px;
+    }
+
+    .address {
+      text-align: left;
+      top: 0%;
+      font-size: large;
+      padding-left: 70px;
+    }
+
+    .contact {
+      text-align: left;
+      padding-left: 380px;
+    }
+  </style>
+  <div class="combine">
+
+    <div class="logo">
+      <img src="logo2.jpg" alt="show" style="width:150px; height:100x;">
     </div>
 
+    <div class="topnav" id="myTopnav">
+
+      <a href="Home.html" class="active">Home</a>
+      <a href="About us.html">About us</a>
+      <a href="Government.html">City Departments</a>
+
+      </a>
 
 
-    <div class="search">
-        <h3>
-            Search here:
-        </h3>
-        <input type="text" placeholder="Search..">
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-
-
-
-
-    <div class="heading">
-        <h1>
-            About us
-        </h1>
-        <hr>
-    </div>
+  </div>
 
 </head>
-
+<br>
 
 <body>
-    <div class="all">
+  <br><br>
+  <div class="about-section">
+    <h1>About Us Page</h1>
+    <p>It’s the platform where people report their maintenance issues regarding the municipality.</p>
+    <p>It will help community and the municipality to better their communications, it will be easier to
+      communicate issues that needs municipality’s attention.</p>
+    <p>It is a web based application, which means any device can access as long it is connected to the
+      internet.
+      You will access the site using our link.</p><br><br><br>
 
-        <div class="home">
-            <div class="paragraph">
-                <li>
-                    It’s the platform where people report their maintenance issues regarding the municipality.
-                </li>
-
-                <li>
-                    It will help community and the municipality to better their communications, it will be easier to
-                    communicate issues that needs municipality’s attention.
-                </li>
-                <li>
-                    It is a web based application, which means any device can access as long it is connected to the
-                    internet.
-                    You will access the site using our link.
-
-
-                </li>
-            </div>
-            <br>
-
-            <div class="statement ">
-                <h2>
-                    Goals, Vision and Misssion statement
-                </h2>
-                <hr>
-            </div>
+    <div class="statement ">
+      <h1>
+        Goals, Vision and Misssion statement
+      </h1>
+      <hr>
+    </div>
 
 
-            <div class="state clearfix">
-                <div class="par1 clearfix">
-                    <h3>
-                        Goals
-                    </h3>
+    <div class="state clearfix">
+      <div class="par1 clearfix">
+        <h3>
+          Goals
+        </h3>
 
-                    <p>
-                        <li>
-                            Our goals is to make communication easy between the people and municipality.
-                        </li>
-                        <li>
-                            Is to make people report oncodents at any give time of the day.
-                        </li>
+        <p>
+          <li>
+            Our goals is to make communication easy between the people and municipality.
+          </li>
+          <li>
+            Is to make people report oncodents at any give time of the day.
+          </li>
 
-                        <li>
-                            To save the transport fee people use to travel to Government offices.
-                        </li>
+          <li>
+            To save the transport fee people use to travel to Government offices.
+          </li>
 
-                    </p>
+        </p>
 
-                </div>
+      </div>
 
 
 
-                <div class="par2 clearfix">
-                    <h3>
-                        Vision
-                    </h3>
-                    <p>
-                        <li>
-                            To see people benefiting from the service.
-                        </li>
-                        <li>
-                            To work with other municipality’s in SA.
-                        </li>
+      <div class="par2 clearfix">
+        <h3>
+          Vision
+        </h3>
+        <p>
+          <li>
+            To see people benefiting from the service.
+          </li>
+          <li>
+            To work with other municipality’s in SA.
+          </li>
 
-                        <li>
-                            To work with even private companies for maintanance.
-                        </li>
+          <li>
+            To work with even private companies for maintanance.
+          </li>
 
-                    </p>
-                </div>
-
-
-
-                <div class="par3 clearfix">
-                    <h3>
-                        Misssion
-                    </h3>
-                    <p>
-                        <li>
-                            Diliver a easy to use system.
-                        </li>
-
-                        <li>
-                            Have more stake holders
-                        </li>
-
-                        <li>
-                            Align ourselfes with the needs of the people
-                        </li>
-
-                        <li>
-                            Empower and inform people about other ways the can get assistance.
-                        </li>
-                    </p>
-
-                </div>
-
-
-            </div>
-
-            <hr>
-
-            <div class="same">
-                <div class="contacts">
-                    <div class="our">
-                        <h2>
-                            Our contact details
-                        </h2>
-                        <hr>
-                    </div>
-
-                    <h5>
-                        <p>
-                            Email: maintanance@gmail.com
-                        </p>
-                        <p>
-                            contact number: 0789123030
-                        </p>
-
-                        <p>P.O BOX: 1036 Cape Town, SA</p>
-                    </h5>
-                </div>
+        </p>
+      </div>
 
 
 
-                <div class="FTI">
+      <div class="par3 clearfix">
+        <h3>
+          Misssion
+        </h3>
+        <p>
+          <li>
+            Diliver a easy to use system.
+          </li>
 
+          <li>
+            Have more stake holders
+          </li>
 
-                    <div class="media">
-                        <h2>
-                            Our social media platforms
-                            <hr>
-                        </h2>
+          <li>
+            Align ourselfes with the needs of the people
+          </li>
 
-                    </div>
+          <li>
+            Empower and inform people about other ways the can get assistance.
+          </li>
+        </p>
 
-                    <li>
-                        Facebook
-                    </li>
-                    <img src="facebook.png" alt="show" style="width:   50px; height:50px;">
-
-                    <li>
-                        Twitter
-                    </li>
-                    <img src="twiter.jpg" alt="show" style="width:   50px; height:50px;">
-
-
-                    <li>
-                        Instagram
-                    </li>
-                    <img src="instagram.jpg" alt="show" style="width:   50px; height:50px;">
-
-                </div>
-
-            </div>
-
-
-
-
-
-
-        </div>
+      </div>
 
 
     </div>
+  </div>
+  <br>
+
+  <h2 style="text-align:center;color: rgb(200, 204, 193); background-color: gray(211, 194, 194);   color: slategrey;
+    border-color: black; ">SLAMD TEAM</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="Lulama.jpg" alt="Lulama" style="width:250px; height:180px">
+        <div class="container">
+          <h2>Lulama Komana</h2>
+          <p class="title">CEO & Founder</p>
+          <p class="email">ict023@capaciti.org.za</p>
+          <p><a href="mailto:ict023@capaciti.org.za"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="Alistair.jpg" alt="Alistair" style="width:230px; height:180px">
+        <div class="container">
+          <h2>Alistair Wileman</h2>
+          <p class="title">Designer/Developer</p>
+          <p class="email">ict002@capaciti.org.za</p>
+          <p><a href="mailto:ict002@capaciti.org.za"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="card">
+        <img src="Duduzile.jpeg" alt="Duduzile" style="width:230px; height:180px">
+        <div class="container">
+          <h2>Duduzile Cecilia Ntikilili</h2>
+          <p class="title">Art Director</p>
+          <p class="email">ict012@capaciti.org.za</p>
+          <p><a href="mailto:ict012@capaciti.org.za"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="Sphosethu.jpg" alt="Sphosethu" style="width:230px; height:180px">
+        <div class="container">
+          <h2>Siphosethu Kama</h2>
+          <p class="title">Software Programmer</p>
+          <p class="email">ict024@capaciti.org.za</p>
+          <p><a href="mailto:ict024@capaciti.org.za"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="Anele.JPG" alt="Anele" style="width: 200px; height:180px">
+        <div class="container">
+          <h2>Anele Alfred Tobotshana</h2>
+          <p class="title">Designer</p>
+          <p class="email">ict004@capaciti.org.za</p>
+          <p><a href="mailto:ict004@capaciti.org.za"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.9.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
 </body>
+
+
+<br>
+<br>
+<br>
+<br>
+<footer class="footer">
+  <div class="contents">
+    <div class="address">
+      <label class="fh1"><strong>Our Address <br><br></strong> </label>
+      54 Albert Rd<br> Woodstock<br>Cape Town<br> 7915
+
+    </div>
+    <div class="contact">
+      <label class="fh1"><strong>Our Contacts <br><br></strong> </label>
+      Email - maintanance@gmail.com <br>
+      Contact number - 0789123030
+    </div>
+    <div class="social">
+      <label class="fh1"><strong>Our social media <br><br></strong> </label>
+      <a href="https://twitter.com/home?lang=en">
+        <i class="fa fa-twitter-square" style="font-size:60px;color:whitesmoke;"></i></a>
+
+      <a href="https://www.instagram.com/">
+        <i class="fa fa-instagram" style="font-size:60px;color:whitesmoke;"></i>
+      </a>
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"
+          style="font-size:60px;color:whitesmoke;"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+</footer>
 
 </html>

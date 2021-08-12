@@ -1,0 +1,199 @@
+.heading {
+            background-color: rgb(101, 122, 143);
+            color: rgb(200, 204, 193);
+            font-style:   Arial;
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+        }
+
+        body {
+            background-color: whitesmoke;
+            color: rgb(200, 204, 193);
+            border-width: 3px;
+            border-color: black;
+
+        }
+
+
+        .home {
+            color: rgb(200, 204, 193);
+            font-style:   Arial;
+            border-width: 3px;
+            border-color: black;
+
+        }
+
+        .contacts {
+            color: slategrey;
+            padding-bottom: 40ch;
+            border-width: 3px;
+            border-color: black;
+
+        }
+
+        .our {
+            color: rgb(200, 204, 193);
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            background-color: slategrey;
+
+        }
+
+        .statement {
+            background-color: slategrey;
+            color: rgb(200, 204, 193);
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+        }
+
+        /* .statement {
+          color:
+        } */
+
+        .social {
+            color: lightslategra;
+            margin: 3pt;
+
+        }
+
+        .topnav {
+            background-color: gray(211, 194, 194);
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: rgb(200, 204, 193);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 23px;
+        }
+
+        /* .topnav {
+            background-color: gray;
+            overflow: hidden;
+        } */
+
+        .media {
+            color: rgb(200, 204, 193);
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            background-color: slategrey;
+
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: rgb(200, 204, 193);
+            size: 1ch;
+        }
+
+        .active {
+            size: 1ch;
+        }
+
+        .Government {
+            color: rgb(200, 204, 193);
+            background-color: gray;
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+
+        }
+
+        .search {
+            float: right;
+            color: rgb(101, 122, 143);
+
+
+        }
+
+        /* h3 {
+            color: rgb(200, 204, 193);
+            ;
+            background-color: slategrey;
+        } */
+
+        .paragraph {
+            color: rgb(101, 122, 143);
+        }
+
+        .par1 {
+            color: rgb(101, 122, 143);
+        }
+
+        .par2 {
+            color: rgb(101, 122, 143);
+        }
+
+        .par3 {
+            color: rgb(101, 122, 143);
+        }
+
+        .state {
+            display: flex;
+        }
+
+        .FTI {
+            color: rgb(101, 122, 143);
+        }
+
+        .topnav {
+            padding-left: 600px;
+            padding-top: 80px;
+
+
+        }
+
+        /* 
+        h1 {
+            background-color: slategrey;
+
+        } */
+
+        .logo {
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        .combine {
+            background-color: rgb(101, 122, 143);
+            display: flex;
+            flex-direction: row;
+        }
+        .fh1{
+            font-size: larger;
+        }
+        .contents{
+
+            display:flex;
+        flex-direction: row;
+        }
+        .footer {
+            
+            padding: 3px;
+            background-color: rgb(101, 122, 143);
+            color: white;
+        
+        }
+        .social{
+            text-align: right;
+            padding-left: 430px;
+        }
+        .address{
+            text-align: left;
+            top: 0%;
+            font-size: large;
+            padding-left: 70px;
+        }
+        .contact{
+            text-align: left;
+            padding-left: 420px;
+        }
+        

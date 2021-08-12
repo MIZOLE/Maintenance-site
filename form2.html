@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload='document.form2.text1.focus()'>
+    <form name="form2" action="#">
+        <p>
+            Cell number
+        </p>
+        <li>
+            <input type='text' name='text1' />
+        </li>
+        <p>
+           Name
+        </p>
+        <li>
+            <input type='text' name='names' />
+        </li>
+        <p>
+            Email
+        </p>
+
+        <li>
+            <input type='text' name='email' />
+
+        </li>
+        <br>
+        <br>
+        <li>&nbsp;</li>
+        <li class="submit"><input type="submit" name="submit" value="Submit"
+                onclick="Allinputs(document.form2.text1), cellNumbers(document.form2.names)"/>
+        </li>
+        <li>&nbsp;</li>
+
+
+    </form>
+
+  
+</body>
+
+
+
+<script src="form2.js"></script>
+
+</html>
